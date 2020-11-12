@@ -5,7 +5,7 @@ PROJECT(vectorclass-download NONE)
 INCLUDE(ExternalProject)
 ExternalProject_Add(vectorclass
 	GIT_REPOSITORY https://github.com/zulma46/version1.git
-	GIT_TAG master
+	GIT_TAG main
 	SOURCE_DIR "${CONFU_DEPENDENCIES_SOURCE_DIR}/vectorclass"
 	BINARY_DIR "${CONFU_DEPENDENCIES_BINARY_DIR}/vectorclass"
 	CONFIGURE_COMMAND ""
