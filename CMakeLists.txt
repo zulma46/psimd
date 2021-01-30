@@ -61,7 +61,7 @@ IF(NOT DEFINED VECTORCLASS1_SOURCE_DIR)
     WORKING_DIRECTORY "${CONFU_DEPENDENCIES_BINARY_DIR}/vectorclass1-download")
   EXECUTE_PROCESS(COMMAND "${CMAKE_COMMAND}" --build .
     WORKING_DIRECTORY "${CONFU_DEPENDENCIES_BINARY_DIR}/vectorclass1-download")
-  SET(VECTORCLASS_SOURCE_DIR "${CONFU_DEPENDENCIES_SOURCE_DIR}/vectorclass1" CACHE STRING "VectorClass1 source directory")
+  SET(VECTORCLASS1_SOURCE_DIR "${CONFU_DEPENDENCIES_SOURCE_DIR}/vectorclass1" CACHE STRING "VectorClass1 source directory")
  ENDIF()
 
 # ---[ psimd library
@@ -73,7 +73,7 @@ ELSE()
 ENDIF()
 TARGET_INCLUDE_DIRECTORIES(psimd INTERFACE include)
 
-# ---[ Configure VectorClass
+# ---[ Configure VectorClass1
 IF(NOT TARGET vectorclass1)
   ADD_SUBDIRECTORY(
     "${VECTORCLASS1_SOURCE_DIR}"
