@@ -1,13 +1,13 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.12 FATAL_ERROR)
 
-PROJECT(vectorclass-download NONE)
+PROJECT(vectorclass1-download NONE)
 
 INCLUDE(ExternalProject)
-ExternalProject_Add(vectorclass
+ExternalProject_Add(vectorclass1
 	GIT_REPOSITORY https://github.com/zulma46/version1.git
 	GIT_TAG main
-	SOURCE_DIR "${CONFU_DEPENDENCIES_SOURCE_DIR}/vectorclass"
-	BINARY_DIR "${CONFU_DEPENDENCIES_BINARY_DIR}/vectorclass"
+	SOURCE_DIR "${CONFU_DEPENDENCIES_SOURCE_DIR}/vectorclass1"
+	BINARY_DIR "${CONFU_DEPENDENCIES_BINARY_DIR}/vectorclass1"
 	CONFIGURE_COMMAND ""
 	BUILD_COMMAND ""
 	INSTALL_COMMAND ""
